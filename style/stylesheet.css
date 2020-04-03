@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+.output {
+    width: 100vw;
+    height: auto;
+}
+
+.output img {
+    width: 30vw;
+    height: auto;
+}

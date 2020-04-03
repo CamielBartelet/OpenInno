@@ -48,7 +48,7 @@
 <html>
   <head>
   <title>Effenaar CMS</title>
-    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href="style/stylesheet.css" rel="stylesheet" type="text/css" />
   </head>
     <body>
     <h1>CMS Effenaar</h1>
@@ -59,6 +59,8 @@
       <input type='text' name='text' />
       <input type="submit" name="submit">
     </form>
+
+    <div class="output">
 
     <?php
         $sql = "SELECT ID, title, fileupload, subtext FROM cmsefftry";
@@ -74,7 +76,7 @@
                 $image = $row['fileupload'];
                 // $image_src = "./upload/".$image;
                 if (!empty($image)) {
-                echo '<img src="upload/'.$image.'" width="360" height="150">';
+                echo '<img src="upload/'.$image.'">';
                 }
             }
         } else {
@@ -82,6 +84,7 @@
         }
 
       ?>
+      </div>
 
         
     </body>
